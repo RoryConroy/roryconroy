@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rory Conroy | Growth</title>
+
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #00ff7f;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Courier New", Courier, monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+      max-width: 62ch;
+      padding: 1rem;
+      text-align: center;
+    }
+    a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--fg);
+    }
+    a:hover,
+    a:focus {
+      background: var(--fg);
+      color: var(--bg);
+    }
+
+    #cursor {
+      display: inline-block;
+      width: 0.6em; 
+      margin-left: 2px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>
+      <a href="https://www.linkedin.com/in/rory-conroy/" target="_blank" rel="noopener">Rory&nbsp;Conroy</a>
+      builds growth engines for the world’s fastest-growing startups, blending a software-development background with hands-on experience across acquisition, product, and revenue at companies like
+      <a href="https://engine.com"  target="_blank" rel="noopener">Engine</a>,
+      <a href="https://gorgias.com" target="_blank" rel="noopener">Gorgias</a>, and
+      <a href="https://glofox.com"  target="_blank" rel="noopener">Glofox</a>.
+    </p>
+    <p style="margin-top: 1.2rem;">
+      Get in touch: <a href="mailto:rory@ruairigrowth.com">rory@ruairigrowth.com</a><span id="cursor">█</span>
+    </p>
+  </main>
+  <script>
+    (function () {
+      const cursor = document.getElementById('cursor');
+      setInterval(() => {
+        cursor.style.visibility = cursor.style.visibility === 'hidden'
+          ? 'visible'
+          : 'hidden';
+      }, 500);
+    })();
+  </script>
+</body>
+</html>
